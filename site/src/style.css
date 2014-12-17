@@ -1,0 +1,13 @@
+body, html { margin:0px; padding:0px; text-align:center; }
+
+#container{ width:1024px; height:768; margin:0 auto;}
+
+#logo { height:150px; width: 560px; float:left; }
+
+#left{ width:454px; height:200px; margin:0px; margin-left:570px }
+
+#clear{ clear:left; height:500px; width:774px; float:left;}
+
+#news { height:500px; width:250px; margin-left:775px; }
+
+#footer{ width:768px; height: 68px; text-align: right; }

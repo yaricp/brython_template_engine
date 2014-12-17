@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ru">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>News</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <script type="text/javascript" src="src/brython/brython.js"></script>
+    <script type="text/python" src="src/brython/src/script.py"></script>
+   
+</head>
+<body link="#000000" alink="#CC0000" vlink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  onload="brython()">
+<div id="container">
+  <div id="logo">
+    <table border="0" cellpadding="0" cellspacing="0" align="left">
+            <tr>
+              <th height="150" colspan="7" align="center">
+                <a href="index.html"> Your Site Logo</a> </th>
+            </tr>
+<tr height="35" align="left">
+ 				<th width="10"></th>
+              <th width="80"><a href="news.html" style="color:#C00" >News</a> </th>
+              <th width="60"><a href="about us.html" >About us</a></th>
+              <th width="80"><a href="services.html" >Services</a></th>
+              <th width="110"><a href="portfolio.html" >Portfolio</a></th>
+              <th width="80"><a href="contacts.html" >Contacts</a></th>
+              <th></th>
+              </tr>
+           <tr>
+          <th height="25" colspan="6" scope="col" align="left" valign="top">
+                <img src="images/Untitled-1_13.jpg"  alt=""> </th>
+      </tr>
+	</table> </div>
+
+           
+    
+    <div id="left"> <img src="images/N8A5828FEAD83.jpg"> </div>
+     
+    
+    
+    <div id="clear">
+<table id="newstable" width="700" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td rowspan="8" width="50">&nbsp;</td>
+    <td height="25">&nbsp;</td>
+    <td rowspan="8" width="50">&nbsp;</td>
+  </tr>
+  
+</table>
+    </div>
+        <div id="news">
+           <table width="250" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="50" colspan="3">
+              <form name="web" method="get" action=""<br/>
+              <input name="q" id="form-query" value="" placeholder="search on site">
+            <input src="images/search.png" type="image" style="vertical-align: bottom; padding: 0;"/></form></td>
+          </tr>
+          <tr>
+            <td width="10" rowspan="2" bgcolor="#EBEBEB">&nbsp;</td>
+            <td bgcolor="#EBEBEB">News<br>
+            <img src="images/grey.gif" alt=""></td>
+            <td width="10" rowspan="2" bgcolor="#EBEBEB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="250" bgcolor="#EBEBEB" >
+            <div id="news-content" style="position:relative;overflow:hidden"></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" height="80" background="images/grey.jpg">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3">Your phones</td>
+          </tr>
+        </table>
+        </div>
+    </div>
+    <div id="footer">
+    <img src="images/redline_bottom.jpg" alt=""> <br>
+    © 2013 Your copyright
+    </div>
+</div>
+</body>
+<script type="text/python">
+        render(file = 'news.txt',
+        temp = 'template_news2.html',
+        target = "newstable",
+        count = None)
+</script>
+<script type="text/python">
+        render(file = 'news.txt',
+        temp = 'template_news1.html',
+        target = "news-content",
+        count = 3
+        )
+</script>
+</html>
